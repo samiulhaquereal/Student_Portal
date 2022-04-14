@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Student Managment System</title>
+		<link rel="icon" type="image/x-icon" href="1.png">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 23px;
+  color: white;
+  line-height: 70px;
+  text-align: left;
+  padding-left : 30px;
+  background: linear-gradient(to right, #808080, #3fada8);
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  line-height: 65px;
+  font-size: 17px;
+  color: white;
+  padding-left: 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  background: #00897d;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 24px;
+  color: white;
+  background-color : #009386;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: #E3E6E3;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+.view{ 
+   height : 87% ;
+   border: 10px solid #E3E6E3;
+   
+   
+}	
+.md img {
+			  width: 10%;
+			  padding-left: 750px;
+			  padding-top: 350px;
+			}
+.headline {
+				  padding-left: 700px;
+					padding-top: 50px;
+}
+.header{
+	width : 100%;
+	height : 80px;
+	display : block;
+	background : linear-gradient(45deg,#00897B,#0081bf);
+
+}
+
+	
+	
+	</style>
+	</head>
+	<body>
+			
+
+		   <input type="checkbox" id="check">
+				<label for="check">
+				  <i class="fas fa-bars" id="btn"></i>
+				  <i class="fas fa-times" id="cancel"></i>
+			</label>
+				<div class="sidebar" style="background: linear-gradient(to right, #000b4b, #3fada8)">
+				<header>Student Portal</header>
+				<ul>
+				 <li><a href="sinfo.html"><i class="fa fa-user"></i>Student Information Insert</a></li>
+				 <li><a href="studentreg.html"><i class="fa fa-building"></i>Student Registration</a></li>
+				 <li><a href="coursereg.html"><i class="fa fa-book"></i>Course Registration</a></li>
+				 <li><a href="Student Result Information.html"><i class="fa fa-upload"></i>Student Result Insert</a></li>
+				 <li><a href="allstudentinfo2.php"><i class="fa fa-users"></i>All Registered Student</a></li>
+         <li><a href="Not Registered.php"><i class="fa fa-users"></i>Not Registered Student</a></li>
+				 <li><a href="Academic Result2.php"><i class="fa fa-graduation-cap"></i>Academic Result</a></li>
+				 <li><a href="activitylog.php"><i class="fa fa-archive"></i>Activity Log</a></li>
+				</ul>
+			  </div>
+			   <section class="main">
+			   <div class="header">
+			   <div class = "inner_header">
+
+
+			   </div>
+			       
+			   </div>
+
+			   <div class="view" layout="column" flex="80" flex-offset="10" flex-xs="90" flex-offset-xs="5" style="background: linear-gradient(to right, #80D8FF, #A7FFEB); color: #006064" layout-align="center" layout-padding="10px">
+
+					<md-card class="md">
+						<img src="1.png">
+					</md-card>
+					<h2 class="headline">
+						Welcome to Student Portal
+					</h2>
+
+               </div>
+
+			   
+			   </section> 
+
+	</body>
+
+
+
+
+</html>
